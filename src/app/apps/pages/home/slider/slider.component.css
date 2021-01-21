@@ -1,0 +1,19 @@
+.home-slider{
+    direction: ltr;
+    height: 500px;
+    margin-top: 180px;
+    margin-bottom: 3px;
+}
+
+.home-slider .slider-item{
+    height: 500px;     
+    background-repeat: no-repeat!important;
+    background-size: 100% 100%!important;
+    background-position: 100% 100%!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-slider{height: 30vh!important; margin-top: 40px;}
+
+    .home-slider .slider-item{height: 30vh!important; }
+}

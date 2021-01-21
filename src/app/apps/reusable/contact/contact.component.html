@@ -1,0 +1,106 @@
+<section id="js_contact" class="contact">
+    <div class="container">
+        <div class="col-md-12 text-right" style="position: relative; top: -85px;">
+            <h2 class="section-title section-sub-title">تواصل معنا</h2> 
+            <p class="p-description">يمكنك التواصل مع فريقنا الفني في اي وقت للاستفسار و الدعم الفني</p>
+        </div>
+    
+        <form class="contact-form" nz-form [formGroup]="contactForm" (ngSubmit)="contact()" style="margin-top: 45px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="input-group-lg">
+                        <nz-form-item class="contact-form-item">
+                            <nz-form-control nzErrorTip="بالرجاء كتابة الاسم">
+                                <nz-input-group nzPrefixIcon="user">
+                                    <input  
+                                    class="form-control" 
+                                    nz-input 
+                                    formControlName="username" 
+                                    placeholder="الاسم" />
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="input-group-lg">
+                        <nz-form-item class="contact-form-item">
+                            <nz-form-control nzErrorTip="بالرجاء كتابة البريد الالكتروني">
+                                <nz-input-group nzPrefixIcon="mail">
+                                    <input
+                                        placeholder="البريد الالكتروني"
+                                        nz-input
+                                        [(ngModel)]="inputValue"
+                                        (input)="onInput($event)"
+                                        [nzAutocomplete]="auto"
+                                        type="email"
+                                        formControlName="email"
+                                        class="form-control" />
+                                    <nz-autocomplete #auto>
+                                        <nz-auto-option *ngFor="let option of options" [nzValue]="option">{{ option }}</nz-auto-option>
+                                    </nz-autocomplete>  
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                </div> 
+                
+                <div class="col-md-4">
+                    <div class="input-group-lg">
+                        <nz-form-item class="contact-form-item">
+                            <nz-form-control nzErrorTip="بالرجاء كتابة عنوان الرسالة">
+                                <nz-input-group nzPrefixIcon="edit">
+                                    <input  
+                                    class="form-control" 
+                                    nz-input 
+                                    formControlName="title" 
+                                    placeholder="عنوان الرسالة" />
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="input-group-lg">
+                        <nz-form-item class="contact-form-item">
+                            <nz-form-control nzErrorTip="بالرجاء كتابة الرسالة">
+                                <textarea
+                                    nz-input
+                                    placeholder="الرسالة"
+                                    [nzAutosize]="{ minRows: 6, maxRows: 10 }"
+                                    formControlName="message"></textarea>   
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                </div> 
+                
+                <div class="col-md-12 text-left">
+                    <div class="input-group-lg">
+                        <nz-form-item>
+                            <nz-form-control>
+                                <button
+                                    class="form-control btn"
+                                    [disabled]="!contactForm.valid"
+                                    nz-button 
+                                    matRipple>
+                                    <div class="loader text-center w-100" *ngIf="loader">
+                                        <nz-spin nzSimple></nz-spin>
+                                    </div>                                        
+                                    <span *ngIf="!loader">
+                                        ارسال
+                                    </span>
+                                </button>
+                            </nz-form-control>
+                        </nz-form-item>                    
+                    </div>
+                </div>         
+            </div>
+        </form>  
+    </div>
+
+    <div class="background-continue"></div>
+    <div class="contact-image" ></div>
+
+</section>

@@ -1,0 +1,104 @@
+.pricing .title-wrapper{
+    margin-bottom: 80px;
+}
+
+.pricing .title-wrapper .section-title{
+    position: relative;
+    display: inline-block;
+}
+
+.pricing .title-wrapper .section-title::after{
+    position: absolute;
+    top: 12px;
+    margin-right: 80px;
+    right: 100%;
+    width: 54px;
+    content: url('./../../../../assets/img/header-bg-left.svg');
+}
+
+.pricing .title-wrapper .section-title::before{
+    position: absolute;
+    top: 12px;
+    margin-left: 80px;
+    left: 100%;
+    width: 54px;
+    content: url('./../../../../assets/img/header-bg-right.svg');
+}
+
+.pricing .table-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #ebeef1;
+}
+
+.pricing .table-wrapper .table-main .p-table{
+    display: table;
+    width: 100%;
+    color: #2b2d34;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f2f4f6;
+}
+
+.pricing .table-wrapper .table-main .p-table .p-cell{
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+    padding: 15px 25px;
+    text-align: center;
+    border-right: 1px solid #ebeef1;
+}
+
+.pricing .table-wrapper .table-main .p-table .p-cell .fa-check-circle{
+    color: #8fd049;
+    font-size: 22px;
+}
+
+.pricing .table-wrapper .table-main .p-table .p-cell .fa-times-circle{
+    color: #ff6767;
+    font-size: 22px;
+}
+
+.pricing .table-wrapper .table-main .p-table .p-bold{
+    color: #2b2d34;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.pricing .table-wrapper .table-main .p-table .p-package span {
+    display: block;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.pricing .table-wrapper .table-main .p-table .p-package .small{
+    font-size: 14px;
+    font-weight: 500;
+    color: #888b98;
+    margin-top: 8px;
+}
+
+.pricing .table-wrapper .table-main .p-table .basic{
+    color: #ff9e01;
+}
+
+.pricing .table-wrapper .table-main .p-table .plus{
+    color: #2ac5b0;
+}
+
+.pricing .table-wrapper .table-main .p-table .pro{
+    color: #9381f1;
+}
+
+.pricing .table-wrapper .table-main .bg-color{
+    background: #f9fafb;
+}
+
+.pricing .table-wrapper .p-header{
+    text-align: center;
+    padding: 15px 0;
+    background: #f2f4f6;
+    color: #2b2d34;
+    font-size: 18px;
+    font-weight: 900;
+}

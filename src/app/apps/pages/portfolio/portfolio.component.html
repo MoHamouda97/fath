@@ -1,0 +1,35 @@
+<section>
+    <div class="container">
+        <div class="main-wrapper section-head text-right">
+            <h2 class="section-title">أعمالنا</h2>
+            <p class="p-description">
+                لدينا مجموعة تطبيقات ناجحة بالسوق و ايضا مواقع الكترونية يمكنكم الاطلاع عليها فيما يلي
+            </p>
+        </div> 
+    </div>
+    
+    <section class="portfolio">
+        <div class="container h-100">        
+            <div class="row h-100" style="align-items: center;">
+                <div class="col-md-6" style="direction: ltr;">
+                    <owl-carousel-o [options]="customOptions" class="clients">
+                        <ng-template carouselSlide *ngFor="let w of works">
+                            <img
+                                src="https://www.admin.codesroots.com/library/homepage/photo/umphotos/{{w.photo}}" 
+                                alt="portfolio"
+                                style="margin: auto; width: 190px;" />
+                        </ng-template>                   
+                    </owl-carousel-o>
+                </div>
+                <div class="col-md-6">
+                    <img src="./../../../../assets/img/portfolio-img.png" alt="img" style="width: 100%; margin-bottom: 30px;" />
+                    <p class="text-center p-description">
+                        يمكنكم الاطلاع على اعمالنا من هذه القائمة الكبيرة من التطبيقات و المواقع و الضغط على التفاصيل
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-loader [loader]="loader"></app-loader>
+</section>

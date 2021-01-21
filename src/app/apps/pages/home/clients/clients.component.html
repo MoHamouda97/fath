@@ -1,0 +1,15 @@
+<section class="clients">
+    <div class="slider" style="direction: ltr;">
+        <div class="container">
+            <h3 class="text-right section-title" style="margin-bottom: 85px;">عملاء تشرفنا بخدمتهم</h3>
+            <owl-carousel-o [options]="customOptions" class="clients">
+                <ng-template carouselSlide *ngFor="let slide of slides">
+                    <img
+                        src="https://www.admin.codesroots.com/library/homepage/photo/umphotos/{{slide.photo}}" 
+                        alt="portfolio"
+                        style="margin: auto; width: 190px;" />
+                </ng-template>                   
+            </owl-carousel-o> 
+        </div>            
+    </div>
+</section>

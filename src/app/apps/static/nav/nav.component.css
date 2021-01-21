@@ -1,0 +1,36 @@
+.navbar{position: relative;}
+
+.navbar .nav-background-image{
+    position: absolute;
+    top: -60px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.navbar .navbar-brand{
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 75px;
+    background-color: #fff;
+}
+
+.navbar .navbar-brand .logo{width: 60px;}
+
+.navbar .navbar-brand h6{
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.navbar-nav li{border-radius: 10px;}
+
+@media only screen and (max-width: 768px){
+    .navbar .nav-background-image{top: 0;}
+}

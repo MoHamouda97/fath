@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@font-face {
+    font-family: 'din';
+    src: url('assets/fonts/DINNextLTArabic-Regular-2.ttf') format("opentype");
+}
+
+/* global */
+
+body{
+    direction: rtl;
+    font-family: 'din';
+    background-color: #fefefe;
+    overflow-x: hidden;
+}
+
+.contact-wrapper{
+    margin-top: 200px;
+}
+
+section{position: relative;}
+
+/* classes */
+
+.main-wrapper{
+    margin-top: 150px;
+    position: relative;
+    z-index: 9999;
+}
+
+.section-title{
+    font-size: 45px;
+    margin-bottom: 45px;
+    font-weight: 600;
+}
+
+.p-description{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.section-sub-title{
+    color: #fa6400;
+    font-weight: normal;
+}
+
+.contact-margin{margin-top: 205px !important;}
+
+.clear-margin{margin-top: -3px;}
+
+/* ant */
+
+.ant-input-affix-wrapper{
+    background-color: #e2e3e4;
+    border-radius: 20px;
+}
+
+.ant-input-prefix{
+    position: relative;
+    top: 5px;
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+/* mat */
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{text-align: right;}
+
+/* owl */
+
+.owl-theme .owl-nav [class*=owl-]{background: transparent !important;}
+
+.owl-theme .owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+.owl-theme .owl-nav [class*=owl-prev]{
+    position: absolute;
+    left: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-next]{
+    position: absolute;
+    right: 0;
+}
+
+/* bootstrap */
+
+.bg-light{background-color: transparent !important;}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px){
+    .section-title{font-size: 40px;}
+
+    .p-description{text-align: justify;}
+
+    .main-wrapper{
+        margin-top: 40px
+    }
+
+    .contact-margin{margin-top: 100px !important;}
+}

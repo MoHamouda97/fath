@@ -1,0 +1,15 @@
+.site-intro{
+    background-image: url('./../../../../../assets/img/intro-background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.site-intro .intro-box .intro-img img{
+    height: 270px;
+    margin-bottom: 15px;
+}
+
+.site-intro .intro-box .intro p{
+    font-size: 23px;
+    margin-bottom: 75px;
+}
